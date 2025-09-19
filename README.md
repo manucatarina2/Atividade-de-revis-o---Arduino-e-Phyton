@@ -1,81 +1,69 @@
-Exercício de Fixação e Aprofundamento – Python e Arduino
+# Exercício de Fixação e Aprofundamento – Python e Arduino
 
-Este repositório contém duas atividades práticas que unem hardware (Arduino) e software (Python), com o objetivo de fixar conceitos fundamentais de programação e automação.
+Este repositório contém duas atividades práticas para consolidar o aprendizado em **Arduino** e **Python**, explorando conceitos de **hardware, software e lógica de programação**.
 
-Atividade 1 – Arduino
+---
 
-Tema: Automatização de iluminação com sensor LDR
+## Atividade 1 – Arduino  
+### Tema: Automatização de iluminação com sensor LDR  
 
-Escopo
+**Descrição:**  
+O aluno deve desenvolver um sistema simples que acenda um **LED** quando o ambiente estiver escuro e o apague quando houver luminosidade suficiente.  
 
-Desenvolver um sistema simples no Arduino que acenda um LED quando o ambiente estiver escuro e o apague quando houver luminosidade suficiente.
+### Escopo
+1. Montar o circuito no protoboard:  
+   - Conectar o **LDR** em série com resistor de **10kΩ** para formar um divisor de tensão.  
+   - Conectar o **LED** com resistor de **220Ω** em um pino digital do Arduino.  
+2. Programar o Arduino para ler o valor analógico do LDR.  
+3. Definir um limite (*threshold*) para decidir se o LED deve acender ou apagar.  
+4. Testar em ambientes claro e escuro.  
 
-Materiais necessários
+### Materiais
+- 1 Arduino UNO (ou similar)  
+- 1 LED  
+- 1 resistor de 220Ω  
+- 1 resistor de 10kΩ  
+- 1 LDR (sensor de luminosidade)  
+- Jumpers e protoboard  
 
-1 Placa Arduino UNO (ou similar)
+### Objetivos Pedagógicos
+- Trabalhar **entrada analógica** (LDR) e **saída digital** (LED).  
+- Reforçar a **lógica condicional** no Arduino.  
+- Relacionar conceitos de **hardware + software** (interação físico-digital).  
 
-1 LED
+---
 
-1 resistor de 220Ω
+## Atividade 2 – Python  
+### Tema: Sistema de Cadastro e Busca de Alunos  
 
-1 resistor de 10kΩ
+**Descrição:**  
+O aluno deve criar um programa em Python que permita **cadastrar alunos** em uma lista e **pesquisar alunos pelo nome**.  
 
-1 LDR (sensor de luminosidade)
+### Funcionalidades mínimas
+1. Menu inicial com opções:  
+   - `1` → Cadastrar aluno  
+   - `2` → Listar todos os alunos  
+   - `3` → Pesquisar aluno por nome  
+   - `4` → Sair  
+2. Cada aluno deve conter: **Nome, Idade, Curso**.  
+3. Dados salvos em uma **lista de dicionários**.  
+4. Na busca, exibir mensagem caso o aluno não seja encontrado.  
 
-Jumpers e protoboard
+### Objetivos Pedagógicos
+- Reforçar uso de **listas e dicionários** em Python.  
+- Trabalhar **manipulação de strings** e **loops**.  
+- Aplicar **lógica de programação** em um problema prático.  
 
-Passos da atividade
+---
 
-Montar o circuito no protoboard:
+## Organização do Repositório
+- `/arduino/` → Código e esquemático da Atividade 1  
+- `/python/` → Código da Atividade 2  
 
-LDR em série com resistor de 10kΩ → divisor de tensão.
+---
 
-LED com resistor de 220Ω → pino digital.
+## Aprendizados Esperados
+- Integração entre **hardware (Arduino)** e **software (código Python)**.  
+- Desenvolvimento de soluções lógicas e práticas.  
+- Consolidação de conceitos fundamentais de programação e eletrônica.  
 
-Programar o Arduino para ler o valor analógico do LDR.
-
-Definir um limiar (threshold) para decidir se o LED deve acender ou apagar.
-
-Testar em ambiente claro e escuro.
-
-Objetivos pedagógicos
-
-Compreender entrada analógica (LDR) e saída digital (LED).
-
-Reforçar o uso de condicionais no Arduino.
-
-Relacionar conceitos de hardware + software na interação físico-digital.
-
-Atividade 2 – Python
-
-Tema: Sistema de Cadastro e Busca de Alunos
-
-Escopo
-
-Criar um programa em Python que cadastre alunos em uma lista e permita pesquisar um aluno pelo nome.
-
-Funcionalidades mínimas
-
-Menu inicial com opções:
-
-1 → Cadastrar aluno
-
-2 → Listar todos os alunos
-
-3 → Pesquisar aluno por nome
-
-4 → Sair
-
-Cada aluno deve ter: Nome, Idade, Curso.
-
-Cadastro salvo em uma lista de dicionários.
-
-Busca por nome com mensagem caso não seja encontrado.
-
-Objetivos pedagógicos
-
-Reforçar uso de listas e dicionários.
-
-Praticar manipulação de strings e loops.
-
-Aplicar lógica de programação em um problema real.
